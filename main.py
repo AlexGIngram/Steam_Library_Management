@@ -59,7 +59,7 @@ class SecondPage(ttk.Frame):
     def __init__(self, parent, controller):
         ttk.Frame.__init__(self, parent)
         self.controller = controller
-        df = pd.read_csv('steam-library-Murkyloc.csv')
+        df = pd.read_csv('steam-library.csv')
         df = df.drop(columns=['last_played'])
         df = df.iloc[:, 0:28]
         self.df = df
